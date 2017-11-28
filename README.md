@@ -1,6 +1,6 @@
 # Strip Html Tags filter plugin for Embulk
 
-TODO: Write short description here and embulk-filter-strip_html_tags.gemspec file.
+This plugin strips HTML tags from values of specified columns.
 
 ## Overview
 
@@ -8,17 +8,18 @@ TODO: Write short description here and embulk-filter-strip_html_tags.gemspec fil
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
+- **columns**: column names  (array<string>, default: `[]`)
 
 ## Example
+
+This settings strips tags on column foo and bar, leaves other columns untouched.
 
 ```yaml
 filters:
   - type: strip_html_tags
-    option1: example1
-    option2: example2
+    columns:
+      - foo
+      - bar
 ```
 
 
