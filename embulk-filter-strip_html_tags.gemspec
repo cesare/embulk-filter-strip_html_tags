@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.description   = "Strip Html Tags"
   spec.email         = ["cesare@mayverse.jp"]
   spec.licenses      = ["MIT"]
-  # TODO set this: spec.homepage      = "https://github.com/cesare/embulk-filter-strip_html_tags"
+  spec.homepage      = "https://github.com/cesare/embulk-filter-strip_html_tags"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})
