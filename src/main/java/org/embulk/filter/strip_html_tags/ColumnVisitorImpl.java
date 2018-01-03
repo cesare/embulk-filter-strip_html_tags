@@ -49,7 +49,7 @@ public class ColumnVisitorImpl implements ColumnVisitor{
             pageBuilder.setNull(column);
         }
         else {
-            pageBuilder.setLong(column, pageReader.getLong(column));
+            pageBuilder.setDouble(column, pageReader.getDouble(column));
         }
     }
 
