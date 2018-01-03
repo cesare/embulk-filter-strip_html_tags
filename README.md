@@ -52,5 +52,5 @@ foo,bar,<p>baz</p>
 ## Build
 
 ```
-$ rake
+$ ./gradlew gem
 ```
